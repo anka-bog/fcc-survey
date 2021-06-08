@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Let's take a survey!</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+      <div class="head">
+        <h1 id="title">
+          This is only a small survey.
+        </h1>
+        <p id="description">
+          Please fill this survey to help me get better.
+        </p>
+      </div>
+      <div class="main">
+        <form id="survey-form">
+          <div class="label">
+            <label id="name-label">Your name</label>
+          </div>
+          <div class="box">
+            <input type="text" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="label">
+            <label id="email-label">Your e-mail adress </label>
+          </div>
+          <div class="box">
+            <input type="email" id="email" placeholder="Enter your e-mail" required>
+          </div>
+          <div class="label">
+            <label id="number-label">Age (optional)</label>
+          </div>
+          <div class="box">
+            <input type="number" id="number" min="1" max="100" placeholder="Enter your age">
+          </div>
+          <div class="label">
+            <label id="dropdown-label">Choose one:</label>
+          </div>
+          <div class="boxd">
+            <select id="dropdown">
+              <option value="opt1">Select an option</option>
+              <option value="opt2">Option 1</option>
+              <option value="opt3">Option 2</option>
+              <option value="opt4">Option 3</option>
+            </select><br>
+          </div>
+          <div class="label">
+            <label id="radiobutton">Do you love me?</label>
+          </div>
+          <div class="buttons">
+            <label for="love">
+              <input id="love" type="radio" name="like-me-or-not" value="Love" checked>Love
+            </label><br>
+            <label for="like">
+              <input id="like" type="radio" name="like-me-or-not" value="Like">Like
+            </label><br>
+            <label for="meh">
+              <input id="meh" type="radio" name="like-me-or-not" value="No">No
+            </label><br>
+            <label for="not-sure">
+              <input id="not-sure" type="radio" name="like-me-or-not" value="Not sure">Not sure
+            </label><br>
+          </div>
+          <div class="label">
+            <label id="checkbox">Preffered form of contact:</label>
+          </div>
+          <div class="buttons">
+            <label for="sms">
+              <input id="sms" type="checkbox" name="contact-form" value="SMS">SMS
+            </label><br>
+            <label for="e-mail">
+              <input id="e-mail" type="checkbox" name="contact-form" value="e-mail">e-mail
+            </label><br>
+            <label for="phone">
+              <input id="phone" type="checkbox" name="contact-form" value="phone">phone
+            </label><br>
+            <label for="none">
+              <input id="none" type="checkbox" name="contact-form" value="none">none
+            </label><br>
+          </div>
+          <div class="text">
+            <textarea name="message">
+Do you have anything to add?
+            </textarea><br>
+          </div>
+          <div class="btn">
+           <button id="submit">
+             Submit
+           </button>
+         </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
